@@ -11,11 +11,13 @@ ${CMAKE_SOURCE_DIR}/src/Buffer.h
 ${CMAKE_SOURCE_DIR}/src/Camera.h
 ${CMAKE_SOURCE_DIR}/src/FreeCamera.h
 ${CMAKE_SOURCE_DIR}/src/Input.h
+${CMAKE_SOURCE_DIR}/src/LineSegment.h
 ${CMAKE_SOURCE_DIR}/src/Material.h
 ${CMAKE_SOURCE_DIR}/src/Model.h
 ${CMAKE_SOURCE_DIR}/src/OBBCollider.h
 ${CMAKE_SOURCE_DIR}/src/Object.h
 ${CMAKE_SOURCE_DIR}/src/OrbitCamera.h
+${CMAKE_SOURCE_DIR}/src/Plane.h
 ${CMAKE_SOURCE_DIR}/src/RigidBody.h
 ${CMAKE_SOURCE_DIR}/src/Screen.h
 ${CMAKE_SOURCE_DIR}/src/Shader.h
@@ -32,15 +34,16 @@ ${CMAKE_SOURCE_DIR}/src/Audio.cpp
 ${CMAKE_SOURCE_DIR}/src/BoxCollider.cpp
 ${CMAKE_SOURCE_DIR}/src/Buffer.cpp
 ${CMAKE_SOURCE_DIR}/src/Camera.cpp
-${CMAKE_SOURCE_DIR}/src/Design.cpp
 ${CMAKE_SOURCE_DIR}/src/FreeCamera.cpp
 ${CMAKE_SOURCE_DIR}/src/Input.cpp
+${CMAKE_SOURCE_DIR}/src/LineSegment.cpp
 ${CMAKE_SOURCE_DIR}/src/Main.cpp
 ${CMAKE_SOURCE_DIR}/src/Material.cpp
 ${CMAKE_SOURCE_DIR}/src/Model.cpp
 ${CMAKE_SOURCE_DIR}/src/OBBCollider.cpp
 ${CMAKE_SOURCE_DIR}/src/Object.cpp
 ${CMAKE_SOURCE_DIR}/src/OrbitCamera.cpp
+${CMAKE_SOURCE_DIR}/src/Plane.cpp
 ${CMAKE_SOURCE_DIR}/src/RigidBody.cpp
 ${CMAKE_SOURCE_DIR}/src/Screen.cpp
 ${CMAKE_SOURCE_DIR}/src/Shader.cpp
@@ -77,7 +80,9 @@ source_group("Header Files/Components/Core" FILES ${CMAKE_SOURCE_DIR}/src/Materi
 source_group("Header Files/Components/Core" FILES ${CMAKE_SOURCE_DIR}/src/Texture.h)
 source_group("Header Files/Components/Core" FILES ${CMAKE_SOURCE_DIR}/src/Transform.h)
 source_group("Header Files/Components/Physics" FILES ${CMAKE_SOURCE_DIR}/src/BoxCollider.h)
+source_group("Header Files/Components/Physics" FILES ${CMAKE_SOURCE_DIR}/src/LineSegment.h)
 source_group("Header Files/Components/Physics" FILES ${CMAKE_SOURCE_DIR}/src/OBBCollider.h)
+source_group("Header Files/Components/Physics" FILES ${CMAKE_SOURCE_DIR}/src/Plane.h)
 source_group("Header Files/Components/Physics" FILES ${CMAKE_SOURCE_DIR}/src/RigidBody.h)
 source_group("Header Files/Components/Physics" FILES ${CMAKE_SOURCE_DIR}/src/SphereCollider.h)
 source_group("Header Files/Core" FILES ${CMAKE_SOURCE_DIR}/src/App.h)
@@ -100,7 +105,9 @@ source_group("Source Files/Components/Core" FILES ${CMAKE_SOURCE_DIR}/src/Materi
 source_group("Source Files/Components/Core" FILES ${CMAKE_SOURCE_DIR}/src/Texture.cpp)
 source_group("Source Files/Components/Core" FILES ${CMAKE_SOURCE_DIR}/src/Transform.cpp)
 source_group("Source Files/Components/Physics" FILES ${CMAKE_SOURCE_DIR}/src/BoxCollider.cpp)
+source_group("Source Files/Components/Physics" FILES ${CMAKE_SOURCE_DIR}/src/LineSegment.cpp)
 source_group("Source Files/Components/Physics" FILES ${CMAKE_SOURCE_DIR}/src/OBBCollider.cpp)
+source_group("Source Files/Components/Physics" FILES ${CMAKE_SOURCE_DIR}/src/Plane.cpp)
 source_group("Source Files/Components/Physics" FILES ${CMAKE_SOURCE_DIR}/src/RigidBody.cpp)
 source_group("Source Files/Components/Physics" FILES ${CMAKE_SOURCE_DIR}/src/SphereCollider.cpp)
 source_group("Source Files/Core" FILES ${CMAKE_SOURCE_DIR}/src/App.cpp)

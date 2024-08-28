@@ -1,9 +1,9 @@
 #include <algorithm>
 #include <assert.h>
 #include <map>
-#include <imgui.h>
-#include <imgui_impl_opengl3.h>
-#include <imgui_impl_sdl.h>
+//#include <imgui.h>
+//#include <imgui_impl_opengl3.h>
+//#include <imgui_impl_sdl.h>
 #include "Screen.h"
 #include "Utility.h"
 
@@ -100,9 +100,9 @@ bool Screen::Initialize(const std::string& filename)
 	glEnable(GL_SCISSOR_TEST);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-	ImGui::CreateContext();
-	ImGui_ImplOpenGL3_Init("#version 460");
-	ImGui_ImplSDL2_InitForOpenGL(window, context);
+	//ImGui::CreateContext();
+	//ImGui_ImplOpenGL3_Init("#version 460");
+	//ImGui_ImplSDL2_InitForOpenGL(window, context);
 
 	return true;
 }
@@ -178,9 +178,9 @@ void Screen::Present() const
 //======================================================================================================
 void Screen::Shutdown() const
 {
-	ImGui_ImplOpenGL3_Shutdown();
-	ImGui_ImplSDL2_Shutdown();
-	ImGui::DestroyContext();
+	//ImGui_ImplOpenGL3_Shutdown();
+	//ImGui_ImplSDL2_Shutdown();
+	//ImGui::DestroyContext();
 
 	SDL_GL_DeleteContext(context);
 	SDL_DestroyWindow(window);
